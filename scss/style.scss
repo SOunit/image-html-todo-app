@@ -80,16 +80,36 @@ body {
   border: 1px solid #777;
   margin-bottom: 10px;
   border-radius: 5px;
+  border: none;
+  font-weight: 700;
 }
 
 .button-success {
   background-color: aquamarine;
   color: green;
-  border: 1px solid green;
+}
+
+.button-normal {
+  background-color: rgb(255, 217, 0);
+  color: rgb(255, 153, 0);
 }
 
 .button-delete {
   background-color: rgb(190, 190, 190);
   color: gray;
-  border: 1px solid gray;
+}
+
+.create-form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-form-input {
+  padding: 5px;
+}
+
+.input-form {
+  margin: 0 auto 5px auto;
 }

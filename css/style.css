@@ -87,14 +87,35 @@ body {
   margin: 0 auto;
   border: 1px solid #777;
   margin-bottom: 10px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  border: none;
+  font-weight: 700; }
 
 .button-success {
   background-color: aquamarine;
-  color: green;
-  border: 1px solid green; }
+  color: green; }
+
+.button-normal {
+  background-color: #ffd900;
+  color: #ff9900; }
 
 .button-delete {
   background-color: #bebebe;
-  color: gray;
-  border: 1px solid gray; }
+  color: gray; }
+
+.create-form {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.create-form-input {
+  padding: 5px; }
+
+.input-form {
+  margin: 0 auto 5px auto; }
