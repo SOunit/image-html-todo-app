@@ -1,0 +1,95 @@
+/* normalize */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+}
+
+.header {
+  width: 100%;
+  background-color: gray;
+  position: fixed;
+  top: 0;
+  display: flex;
+}
+
+.header-title {
+  color: #666;
+  margin-left: 15px;
+  flex-grow: 1;
+}
+
+.main {
+  margin-top: 70px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin-right: 15px;
+}
+
+.nav-item {
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.nav-item-active {
+  a {
+    color: aquamarine;
+    text-decoration: underline;
+  }
+}
+
+.todo-card-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-card {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto 12px auto;
+  box-shadow: 1px 1px 1px 1px #777;
+}
+
+.todo-card-title {
+  font-size: 200%;
+}
+
+.button-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  padding: 10px;
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #777;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.button-success {
+  background-color: aquamarine;
+  color: green;
+  border: 1px solid green;
+}
+
+.button-delete {
+  background-color: rgb(190, 190, 190);
+  color: gray;
+  border: 1px solid gray;
+}
