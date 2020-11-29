@@ -29,15 +29,13 @@ body {
   .header-title a {
     color: #666;
     text-decoration: none;
-    font-size: 60%; }
+    font-size: 80%; }
 
 .main {
   margin-top: 70px; }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -76,7 +74,7 @@ body {
 .todo-card {
   padding: 5px;
   text-align: center;
-  width: 80%;
+  width: 95%;
   margin: 0 auto 12px auto;
   -webkit-box-shadow: 1px 1px 1px 1px #777;
   box-shadow: 1px 1px 1px 1px #777; }
@@ -145,8 +143,14 @@ body {
 @media (min-width: 768px) {
   body {
     background-color: #adadff; }
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .header-title a {
-    font-size: 100%; } }
+    font-size: 100%; }
+  .todo-card {
+    width: 80%; } }
 
 @media (min-width: 1024px) {
   body {
