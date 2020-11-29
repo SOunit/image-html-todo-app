@@ -25,7 +25,7 @@ body {
   a {
     color: #666;
     text-decoration: none;
-    font-size: 60%;
+    font-size: 80%;
   }
   margin-left: 15px;
   flex-grow: 2;
@@ -36,7 +36,8 @@ body {
 }
 
 .nav {
-  display: flex;
+  display: none;
+  // display: flex;
   flex-grow: 1;
   ul {
     list-style: none;
@@ -72,7 +73,7 @@ body {
 .todo-card {
   padding: 5px;
   text-align: center;
-  width: 80%;
+  width: 95%;
   margin: 0 auto 12px auto;
   box-shadow: 1px 1px 1px 1px #777;
 }
@@ -144,10 +145,18 @@ body {
     background-color: rgb(173, 173, 255);
   }
 
+  .nav {
+    display: flex;
+  }
+
   .header-title {
     a {
       font-size: 100%;
     }
+  }
+
+  .todo-card {
+    width: 80%;
   }
 }
 
