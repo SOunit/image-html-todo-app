@@ -23,7 +23,7 @@ body {
 .header-title {
   color: #666;
   margin-left: 15px;
-  flex-grow: 1;
+  flex-grow: 2;
 }
 
 .main {
@@ -32,9 +32,15 @@ body {
 
 .nav {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
   flex-grow: 1;
+  ul {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
   margin-right: 15px;
 }
 
