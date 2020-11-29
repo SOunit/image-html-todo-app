@@ -21,9 +21,12 @@ body {
 }
 
 .header-title {
-  color: #666;
+  a {
+    color: #666;
+    text-decoration: none;
+  }
   margin-left: 15px;
-  flex-grow: 1;
+  flex-grow: 2;
 }
 
 .main {
@@ -32,9 +35,15 @@ body {
 
 .nav {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
   flex-grow: 1;
+  ul {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
   margin-right: 15px;
 }
 
@@ -55,13 +64,19 @@ body {
 .todo-card-list {
   display: flex;
   flex-direction: column;
+  margin-bottom: 120px;
 }
 
 .todo-card {
+  padding: 5px;
   text-align: center;
   width: 80%;
   margin: 0 auto 12px auto;
   box-shadow: 1px 1px 1px 1px #777;
+}
+
+.todo-card-active {
+  background-color: rgb(255, 255, 174);
 }
 
 .todo-card-title {
@@ -71,11 +86,19 @@ body {
 .button-list {
   display: flex;
   flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  padding: 10px;
+  .button {
+    width: 100%;
+  }
 }
 
 .button {
   padding: 10px;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   border: 1px solid #777;
   margin-bottom: 10px;

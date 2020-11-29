@@ -8,30 +8,35 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="header-title">Todo App</h1>
+      <h1 class="header-title"><a href="index.html">Todo App</a></h1>
       <nav class="nav">
-        <li class="nav-item">
-          <a href="./index.html">Todo List</a>
-        </li>
-        <li class="nav-item">
-          <a href="./add.html">Add Todo</a>
-        </li>
-        <li class="nav-item nav-item-active">
-          <a href="./create.html">Create Todo</a>
-        </li>
-        <li class="nav-item">
-          <a href="./done.html">Done List</a>
-        </li>
+        <ul>
+          <li class="nav-item">
+            <a href="./index.html">Todo List</a>
+          </li>
+          <li class="nav-item">
+            <a href="./add.html">Add Todo</a>
+          </li>
+          <li class="nav-item nav-item-active">
+            <a href="./create.html">Create Todo</a>
+          </li>
+          <li class="nav-item">
+            <a href="./done.html">Done List</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main">
-      <form action="index.html" class="create-form">
+      <form action="add.html" class="create-form">
         <div class="input-form">
           <label for="">Todo</label>
           <input type="text" name="todo" id="todo" class="create-form-input" />
         </div>
-        <button class="button button-normal">Create</button>
+        <div class="button-list">
+          <button class="button button-normal">Create</button>
+        </div>
       </form>
     </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
