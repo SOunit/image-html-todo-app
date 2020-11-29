@@ -21,11 +21,13 @@ body {
   display: flex; }
 
 .header-title {
-  color: #666;
   margin-left: 15px;
   -webkit-box-flex: 2;
   -ms-flex-positive: 2;
   flex-grow: 2; }
+  .header-title a {
+    color: #666;
+    text-decoration: none; }
 
 .main {
   margin-top: 70px; }
@@ -66,7 +68,8 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 120px; }
 
 .todo-card {
   text-align: center;
@@ -85,11 +88,18 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  padding: 10px; }
+  .button-list .button {
+    width: 100%; }
 
 .button {
   padding: 10px;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   border: 1px solid #777;
   margin-bottom: 10px;

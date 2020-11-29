@@ -21,7 +21,10 @@ body {
 }
 
 .header-title {
-  color: #666;
+  a {
+    color: #666;
+    text-decoration: none;
+  }
   margin-left: 15px;
   flex-grow: 2;
 }
@@ -61,6 +64,7 @@ body {
 .todo-card-list {
   display: flex;
   flex-direction: column;
+  margin-bottom: 120px;
 }
 
 .todo-card {
@@ -77,11 +81,19 @@ body {
 .button-list {
   display: flex;
   flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  padding: 10px;
+  .button {
+    width: 100%;
+  }
 }
 
 .button {
   padding: 10px;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   border: 1px solid #777;
   margin-bottom: 10px;
