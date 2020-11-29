@@ -72,11 +72,15 @@ body {
   margin-bottom: 120px; }
 
 .todo-card {
+  padding: 5px;
   text-align: center;
   width: 80%;
   margin: 0 auto 12px auto;
   -webkit-box-shadow: 1px 1px 1px 1px #777;
   box-shadow: 1px 1px 1px 1px #777; }
+
+.todo-card-active {
+  background-color: #ffffae; }
 
 .todo-card-title {
   font-size: 200%; }

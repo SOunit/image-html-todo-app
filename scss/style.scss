@@ -68,10 +68,15 @@ body {
 }
 
 .todo-card {
+  padding: 5px;
   text-align: center;
   width: 80%;
   margin: 0 auto 12px auto;
   box-shadow: 1px 1px 1px 1px #777;
+}
+
+.todo-card-active {
+  background-color: rgb(255, 255, 174);
 }
 
 .todo-card-title {
