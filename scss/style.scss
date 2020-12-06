@@ -37,8 +37,9 @@ body {
 
 .nav {
   display: none;
-  // display: flex;
+  position: relative;
   flex-grow: 1;
+  top: auto;
   ul {
     list-style: none;
     display: flex;
@@ -57,17 +58,10 @@ body {
   }
 }
 
-.nav-item-active {
-  a {
-    color: aquamarine;
-    text-decoration: underline;
-  }
-}
-
 .todo-card-list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 120px;
+  margin-bottom: 200px;
 }
 
 .todo-card {
@@ -90,7 +84,7 @@ body {
   display: flex;
   flex-direction: column;
   position: fixed;
-  bottom: 0;
+  bottom: 65px;
   right: 0;
   width: 40%;
   padding: 10px;
@@ -140,13 +134,59 @@ body {
   margin: 0 auto 5px auto;
 }
 
+.footer-nav-items {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  list-style: none;
+  background-color: #777;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-nav-item {
+  text-align: center;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.footer-nav-icon {
+  font-size: 150%;
+  padding: 8px;
+}
+
+.nav-item-active {
+  a {
+    color: aquamarine;
+    text-decoration: underline;
+  }
+}
+
 @media (min-width: 768px) {
   body {
     background-color: rgb(173, 173, 255);
   }
 
+  .menu_button {
+    display: none;
+  }
+
   .nav {
-    display: flex;
+    // display: none;
+    position: relative;
+    flex-grow: 1;
+    top: auto;
+    ul {
+      list-style: none;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+    }
+    margin-right: 15px;
   }
 
   .header-title {
@@ -155,8 +195,24 @@ body {
     }
   }
 
+  .nav {
+    display: flex;
+  }
+
+  .todo-card-list {
+    margin-bottom: 120px;
+  }
+
   .todo-card {
     width: 80%;
+  }
+
+  .button-list {
+    bottom: 0;
+  }
+
+  .footer-nav-items {
+    display: none;
   }
 }
 

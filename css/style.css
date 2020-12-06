@@ -36,9 +36,11 @@ body {
 
 .nav {
   display: none;
+  position: relative;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  top: auto;
   margin-right: 15px; }
   .nav ul {
     list-style: none;
@@ -57,10 +59,6 @@ body {
   text-decoration: none;
   color: #fff; }
 
-.nav-item-active a {
-  color: aquamarine;
-  text-decoration: underline; }
-
 .todo-card-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,7 +67,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-bottom: 120px; }
+  margin-bottom: 200px; }
 
 .todo-card {
   padding: 5px;
@@ -94,7 +92,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   position: fixed;
-  bottom: 0;
+  bottom: 65px;
   right: 0;
   width: 40%;
   padding: 10px; }
@@ -140,17 +138,70 @@ body {
 .input-form {
   margin: 0 auto 5px auto; }
 
+.footer-nav-items {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  list-style: none;
+  background-color: #777;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.footer-nav-item {
+  text-align: center; }
+  .footer-nav-item a {
+    color: white;
+    text-decoration: none; }
+
+.footer-nav-icon {
+  font-size: 150%;
+  padding: 8px; }
+
+.nav-item-active a {
+  color: aquamarine;
+  text-decoration: underline; }
+
 @media (min-width: 768px) {
   body {
     background-color: #adadff; }
+  .menu_button {
+    display: none; }
+  .nav {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    top: auto;
+    margin-right: 15px; }
+    .nav ul {
+      list-style: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .header-title a {
+    font-size: 100%; }
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  .header-title a {
-    font-size: 100%; }
+  .todo-card-list {
+    margin-bottom: 120px; }
   .todo-card {
-    width: 80%; } }
+    width: 80%; }
+  .button-list {
+    bottom: 0; }
+  .footer-nav-items {
+    display: none; } }
 
 @media (min-width: 1024px) {
   body {
